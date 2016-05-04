@@ -1,0 +1,28 @@
+﻿<md-dialog>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h3>Error</h3>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <div>
+                <span>{{vm.message}}</span>
+            </div>
+
+            <div id="error-details">
+                <a role="button" ng-click="vm.toggleDetails()">
+                    <md-icon ng-show="vm.detailsCollapsed">expand_more</md-icon>
+                    <md-icon ng-hide="vm.detailsCollapsed">expand_less</md-icon>
+                    Details
+                </a>
+                <div ng-hide="vm.detailsCollapsed">
+                    <textarea rows="10" disabled>{{vm.details}}</textarea>
+                </div>
+            </div>
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+        <md-button class="md-primary" ng-click="vm.ok()">OK</md-button>
+    </md-dialog-actions>
+</md-dialog>

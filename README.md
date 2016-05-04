@@ -39,9 +39,9 @@ Start the local web server and launch the brower by running this command from th
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* [D3 Technologies](http://www.d3tech.net/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/D3Automation/angular-c360-sample) who participated in this project.
 
 ## License
 

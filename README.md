@@ -36,12 +36,13 @@ Start the local web server and launch the brower by running this command from th
   ```
   npm start
   ```
+This will start both a web server ([lite-server](https://github.com/johnpapa/lite-server)) and a task runner ([gulp](http://gulpjs.com/)), both in watch mode, and then automatically browse to the application using Google Chrome.  The browser will then automatically refresh whenever a change is saved to any html/js/css/scss file in the project.
 
 ## Authors
 
 * [D3 Technologies](http://www.d3tech.net/)
 
-See also the list of [contributors](https://github.com/D3Automation/angular-c360-sample) who participated in this project.
+See also the list of [contributors](https://github.com/D3Automation/angular-c360-sample/contributors) who participated in this project.
 
 ## License
 

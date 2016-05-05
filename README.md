@@ -8,7 +8,7 @@ Sample Angular application using [angular-c360](https://github.com/D3Automation/
  * Must be set to **_Unrestricted viewing_**
  * [C360 Embedding Options](https://configurator360.autodesk.com/Dashboard/Options/Embedding)
    * Must select "Allow these authorized sites to embed configuration pages of my designs" option
-   * Must include **http://127.0.0.1:5000** as an authorized site for embedding
+    * Must include **http://127.0.0.1:5000** as an authorized site for embedding
 * Node and NPM must be installed
  * If running Windows, see the "Node and NPM on Windows" section of [this post from John Papa](http://www.johnpapa.net/get-up-and-running-with-node-and-visual-studio/)
 

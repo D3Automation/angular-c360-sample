@@ -38,7 +38,7 @@ Start the local web server and launch the brower by running this command from th
   ```
 This will start both a web server ([lite-server](https://github.com/johnpapa/lite-server)) and a task runner ([gulp](http://gulpjs.com/)), both in watch mode, and then automatically browse to the application.  The browser will then automatically refresh whenever a change is saved to any html/js/css/scss file in the project.  To stop the web server, type CTRL+C in the command window.
 
-*Note that if you already have a C360 session active in the same browser as the application, then the application web will display the message "An Error Has Occurred".  Close the other session and refresh the browser to clear the error.*
+*Note that if you already have a C360 session active in the same browser as the application, then the application web page will display the message "An Error Has Occurred".  Close the other session and refresh the browser to clear the error.*
 
 ## Authors
 

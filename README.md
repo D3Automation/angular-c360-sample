@@ -43,7 +43,7 @@ This will start both a web server ([lite-server](https://github.com/johnpapa/lit
 
 ## Authors
 
-* [D3 Technologies](http://www.d3tech.net/)
+* [D3 Automation](http://d3tech.net/solutions/automation/)
 
 See also the list of [contributors](https://github.com/D3Automation/angular-c360-sample/contributors) who participated in this project.
 

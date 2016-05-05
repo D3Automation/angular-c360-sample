@@ -4,12 +4,13 @@ Sample Angular application using [angular-c360](https://github.com/D3Automation/
 
 ### Prerequisities
 
-* The existing design in [Autodesk Configurator 360](https://configurator360.autodesk.com/Design) must be set to **_Unrestricted viewing_**
-* [C360 Embedding Options](https://configurator360.autodesk.com/Design)
- * Must select "Allow these authorized sites to embed configuration pages of my designs" option
- * Must include **http://127.0.0.1:5000** as an authorized site for embedding
+* An existing design in [Autodesk Configurator 360](https://configurator360.autodesk.com/Design)
+ * Must be set to **_Unrestricted viewing_**
+ * [C360 Embedding Options](https://configurator360.autodesk.com/Dashboard/Options/Embedding)
+   * Must select "Allow these authorized sites to embed configuration pages of my designs" option
+   * Must include **http://127.0.0.1:5000** as an authorized site for embedding
 * Node and NPM must be installed
-  * If running Windows, see the "Node and NPM on Windows" section of [this post from John Papa](http://www.johnpapa.net/get-up-and-running-with-node-and-visual-studio/)
+ * If running Windows, see the "Node and NPM on Windows" section of [this post from John Papa](http://www.johnpapa.net/get-up-and-running-with-node-and-visual-studio/)
 
 ### Installing
 
@@ -38,7 +39,7 @@ Start the local web server and launch the brower by running this command from th
   ```
 This will start both a web server ([lite-server](https://github.com/johnpapa/lite-server)) and a task runner ([gulp](http://gulpjs.com/)), both in watch mode, and then automatically browse to the application.  The browser will then automatically refresh whenever a change is saved to any html/js/css/scss file in the project.  To stop the web server, type CTRL+C in the command window.
 
-*Note that if you already have a C360 session active in the same browser as the application, then the application web page will display the message "An Error Has Occurred".  Close the other session and refresh the browser to clear the error.*
+*Note that if you already have a C360 session active in the same browser as the application, then the application web page will display the message "An Error Has Occurred". To clear the error, close the both the previous session tab and the web application tab and then manually browse to http://127.0.0.1:5000.*
 
 ## Authors
 

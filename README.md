@@ -1,6 +1,10 @@
 # angular-c360-sample
 
-Sample Angular application using [angular-c360](https://github.com/D3Automation/angular-c360)
+This is a sample [Angular 1](https://angularjs.org/) application using [angular-c360](https://github.com/D3Automation/angular-c360).  Its purpose is to demonstrate how to create a basic Angular-based web application to use as a front end for a Configurator 360 model.  The application contains a single view (app/model/model.html) that shows all properties from the root level of the model, as well as the graphics viewer.  Within _model.html_, there is also some commented-out html to show how to display single properties rather than the entire list.
+
+Using the concepts shown in this application, along with a basic understanding of html/js/css and [Angular 1](https://angularjs.org/), it is possible to build more complex web applications to interact with Configurator 360.  Additional views can be created to allow interacting with properties on any part in the model.  Buttons can be added to execute actions on the model (e.g. downloading outputs).  Your entire C360 model is available to you as a javascript object model with javascript properties for each of your model properties and javascript functions for each of your model actions.
+
+_**NOTE:** Currently only Angular 1 is supported, but an Angular 2 is in the works and should be available soon_
 
 ### Prerequisities
 

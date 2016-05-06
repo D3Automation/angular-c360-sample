@@ -20,8 +20,13 @@ Sample Angular application using [angular-c360](https://github.com/D3Automation/
     * Download the **Windows Installer**
      * Run the downloaded .msi file
      * Click **Next** through the default options and then click **Finish** to install
-     * **Restart your computer**
+* If you have just installed Node.js in the previous step, **restart your computer before continuing**
+* Bower must be installed.  Run the following from the command line (Node.js must already be installed):
 
+  ```
+  npm install bower -g
+  ```
+   
 ### Installing
 
 Install npm packages by running this command **from the root folder of the project**:
@@ -34,7 +39,7 @@ Install bower packages by running this command **from the root folder of the pro
   bower install
   ```
 
-Set your design key within **_app\app.config.js_**.  The design key is the unique identifier for your design within C360 (i.e. all text to the right of the "https://configurator360.autodesk.com/" text in your C360 design URL).
+Set your design key within _app\app.config.js_.  The design key is the unique identifier for your design within C360 (i.e. all text to the right of the "https://configurator360.autodesk.com/" text in your C360 design URL).
   ```javascript
     app.config(['c360ContextProvider', function (c360ContextProvider) {
         c360ContextProvider.setDesignKey('SET DESIGN KEY HERE');
@@ -42,7 +47,7 @@ Set your design key within **_app\app.config.js_**.  The design key is the uniqu
   ```
 
 ## Running the Application
-Start the local web server and launch the brower by running this command **from the root folder of the project**:
+Run this command **from the root folder of the project** to start the local web server and automatically launch the browser:
 
   ```
   npm start

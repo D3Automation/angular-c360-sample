@@ -20,6 +20,7 @@ Sample Angular application using [angular-c360](https://github.com/D3Automation/
     * Download the **Windows Installer**
      * Run the downloaded .msi file
      * Click **Next** through the default options and then click **Finish** to install
+
 * If you have just installed Node.js in the previous step, **restart your computer before continuing**
 * Bower must be installed.  Run the following from the command line (Node.js must already be installed):
 

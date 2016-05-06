@@ -9,7 +9,16 @@ Sample Angular application using [angular-c360](https://github.com/D3Automation/
  * [C360 Embedding Options](https://configurator360.autodesk.com/Dashboard/Options/Embedding)
    * Must select "Allow these authorized sites to embed configuration pages of my designs" option
     * Must include **http://127.0.0.1:5000** as an authorized site for embedding
-* Node.js and NPM must be installed.  If this is unfamiliar to you and you are running Windows, there are a couple of options:
+ * [C360 Auto-update Options](https://configurator360.autodesk.com/Dashboard/Options/AutoUpdateSetup)
+   * Must select either "Let user choose" or "Always on" for the "Auto-update" setting
+* [git](https://git-scm.com) must be installed.  If this is unfamiliar to you and you are running Windows, there are a couple of options:
+ * Install using [Chocolatey](https://chocolatey.org/) (if you are not familiar with Chocolatey, the next option may be simpler)
+   ```
+   choco install git
+   ```
+   
+ * Install by following the [instructions from the git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Windows)
+* [Node.js and NPM](https://nodejs.org) must be installed.  If this is unfamiliar to you and you are running Windows, there are a couple of options:
  * Install using [Chocolatey](https://chocolatey.org/) (if you are not familiar with Chocolatey, the next option may be simpler)
    ```
    choco install nodejs

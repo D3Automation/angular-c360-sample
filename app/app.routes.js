@@ -20,7 +20,8 @@
             })
             .state("error", {
                 url: "/error",
-                templateUrl: 'app/error/error.html'
+                templateUrl: 'app/error/error.html',
+                controller: 'ErrorController as vm'
             });
     }
 
@@ -33,7 +34,7 @@
                 .then(function (root) {
                     return root;
                 })
-                .catch(function (message) {
+                .catch(function () {
                     $state.go('error');
                     return $q.reject();
                 });

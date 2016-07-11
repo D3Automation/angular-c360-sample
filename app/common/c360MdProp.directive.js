@@ -23,7 +23,7 @@
 
                 function setLabel() {
                     if (vm.uiProp && !vm.propLabel) {
-                        vm.propLabel = vm.uiProp.FullName;
+                        vm.propLabel = vm.uiProp.fullName;
                     }
                 }
             },

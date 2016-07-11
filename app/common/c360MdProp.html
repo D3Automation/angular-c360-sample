@@ -1,32 +1,32 @@
 ﻿<div ng-if="vm.uiProp" flex layout-fill>
-    <div layout="row" ng-if="!vm.uiProp.isCheckbox && vm.uiProp.ChoiceList == null">
+    <div layout="row" ng-if="!vm.uiProp.isCheckbox && vm.uiProp.choiceList == null">
         <md-input-container flex layout-fill>
             <label>{{ vm.propLabel }}</label>
             <input c360-prop="vm.uiProp" />
         </md-input-container>
-        <md-button class="md-icon-button" ng-if="vm.uiProp.CustomData && vm.uiProp.CustomData.AllowReset === true && vm.uiProp.IsModified"
+        <md-button class="md-icon-button" ng-if="vm.uiProp.customData && vm.uiProp.customData.AllowReset === true && vm.uiProp.isModified"
                    ng-click="vm.uiProp.reset()" title="Reset to default">
             <md-icon>replay</md-icon>
         </md-button>
     </div>
 
-    <div layout="row" ng-if="vm.uiProp.ChoiceList != null">
+    <div layout="row" ng-if="vm.uiProp.choiceList != null">
         <md-input-container flex layout-fill>
             <label>{{ vm.propLabel }}</label>
-            <md-select ng-disabled="vm.uiProp.IsReadOnly" placeholder="{{ vm.uiProp.FullName }}" ng-model="vm.uiProp.BoundValue">
-                <md-option ng-repeat="choice in vm.uiProp.ChoiceList" value="{{choice.DisplayString}}">{{choice.DisplayString}}</md-option>
+            <md-select ng-disabled="vm.uiProp.isReadOnly" placeholder="{{ vm.uiProp.fullName }}" ng-model="vm.uiProp.value">
+                <md-option ng-repeat="choice in vm.uiProp.choiceList" value="{{choice.value}}">{{choice.text}}</md-option>
             </md-select>
         </md-input-container>
-        <md-button class="md-icon-button" ng-if="vm.uiProp.CustomData && vm.uiProp.CustomData.AllowReset === true && vm.uiProp.IsModified"
+        <md-button class="md-icon-button" ng-if="vm.uiProp.isModified"
                    ng-click="vm.uiProp.reset()" title="Reset to default">
             <md-icon>replay</md-icon>
         </md-button>
     </div>
 
     <div flex ng-if="vm.uiProp.isCheckbox">
-        <md-checkbox flex ng-model="vm.uiProp.BoundValue" aria-label="{{vm.uiProp.FullName}}"
-                        ng-disabled="vm.uiProp.IsReadOnly"
-                        ng-class="{ 'c360-modified': vm.uiProp.IsModified, 'c360-invalid': vm.uiProp.ErrorInfo}">
+        <md-checkbox flex ng-model="vm.uiProp.value" aria-label="{{vm.uiProp.fullName}}"
+                        ng-disabled="vm.uiProp.isReadOnly"
+                        ng-class="{ 'c360-modified': vm.uiProp.isModified, 'c360-invalid': vm.uiProp.errorInfo}">
             {{ vm.propLabel }}
         </md-checkbox>
     </div>

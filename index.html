@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppController as app">
+<head>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+    <title>D3 C360 Demo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
+    <link rel="shortcut icon" href="images/D3-logo-favicon4.png" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- 3rd party -->
+    <link rel="stylesheet" href="css/vendor-2097d715a4.css"/>
+
+    <!-- App-specific -->
+    <link rel="stylesheet" href="css/app-b74c76ce94.css"/>
+</head>
+<body ng-cloak layout="column">
+    <!-- Busy indicator -->
+    <div cg-busy="app.isBusy"></div>
+
+    <!-- The layout of the application -->
+    <div ng-include="'app/layout/shell.html'" layout="column" layout-fill></div>
+
+    <!-- 3rd party scripts -->
+    <script src="lib/lib-a7094a7b19.js"></script>
+    <script src="https://configurator360.autodesk.com/Script/v1/EmbeddedViewer"></script>
+
+    <!-- Bootstrapping -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <!-- App -->
+    <script src="app/app.controller.js"></script>
+    <script src="app/common/errorDialog.controller.js"></script>
+    <script src="app/common/c360MdProp.directive.js"></script>
+    <script src="app/error/error.controller.js"></script>
+    <script src="app/model/model.controller.js"></script>
+
+    <!-- App Services -->
+    <script src="app/services/common.service.js"></script>
+    <script src="app/services/errorHandler.service.js"></script>
+</body>
+</html>

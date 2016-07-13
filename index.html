@@ -29,13 +29,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- 3rd party -->
+    <!-- build:vendorcss css/vendor.css -->
     <link rel="stylesheet" href="bower_components/angular-busy/dist/angular-busy.min.css" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" />
     <link rel="stylesheet" href="bower_components/toastr/toastr.min.css" />
     <link rel="stylesheet" href="bower_components/angular-c360/angular-c360.css" />
+    <!-- endbuild -->
 
     <!-- App-specific -->
+    <!-- build:appcss css/app.css -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
 </head>
 <body ng-cloak layout="column">
     <!-- Busy indicator -->
@@ -45,7 +49,7 @@
     <div ng-include="'app/layout/shell.html'" layout="column" layout-fill></div>
 
     <!-- 3rd party scripts -->
-    <script src="https://configurator360.autodesk.com/Script/v1/EmbeddedViewer"></script>
+    <!-- build:libjs lib/lib.js -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
@@ -59,6 +63,8 @@
     <script src="bower_components/angular-c360/angular-c360.min.js"></script>
     <script src="bower_components/lodash/lodash.min.js"></script>
     <script src="bower_components/toastr/toastr.min.js"></script>
+    <!-- endbuild -->
+    <script src="https://configurator360.autodesk.com/Script/v1/EmbeddedViewer"></script>
 
     <!-- Bootstrapping -->
     <script src="app/app.module.js"></script>

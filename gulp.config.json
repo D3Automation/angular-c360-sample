@@ -1,4 +1,8 @@
 {
+  "app": "./app/**/*",
+  "html": "./*.html",
   "sass": "./sass/**/*.scss",
-  "cssout": "./css/"
+  "cssout": "./css/",
+  "dist": "./dist/",
+  "images": "./images/**/*"
 }

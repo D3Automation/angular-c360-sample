@@ -1,33 +1,35 @@
-<div ng-if="vm.uiProp" flex layout-fill>
-    <div layout="row" ng-if="!vm.uiProp.isCheckbox && vm.uiProp.choiceList == null">
+<div ng-if="uiProp" flex layout-fill>
+    <div layout="row" ng-if="!uiProp.isCheckbox && uiProp.choiceList == null">
         <md-input-container flex layout-fill>
-            <label>{{ vm.propLabel }}</label>
-            <input c360-prop="vm.uiProp" />
+            <label>{{ labelText }}</label>
+            <input ng-model="uiProp.value" ng-model-options="{ updateOn: 'blur' }" placeholder="{{uiProp.fullName}}"
+                ng-class="{ 'c360-modified': uiProp.isModified, 'c360-invalid': uiProp.errorInfo }" 
+                ng-disabled="uiProp.isReadOnly" type={{uiProp.inputType}} />
         </md-input-container>
-        <md-button class="md-icon-button" ng-if="vm.uiProp.customData && vm.uiProp.customData.AllowReset === true && vm.uiProp.isModified"
-                   ng-click="vm.uiProp.reset()" title="Reset to default">
+        <md-button class="md-icon-button" ng-if="uiProp.customData && uiProp.customData.AllowReset === true && uiProp.isModified"
+                   ng-click="uiProp.reset()" title="Reset to default">
             <md-icon>replay</md-icon>
         </md-button>
     </div>
 
-    <div layout="row" ng-if="vm.uiProp.choiceList != null">
+    <div layout="row" ng-if="uiProp.choiceList != null">
         <md-input-container flex layout-fill>
-            <label>{{ vm.propLabel }}</label>
-            <md-select ng-disabled="vm.uiProp.isReadOnly" placeholder="{{ vm.uiProp.fullName }}" ng-model="vm.uiProp.value">
-                <md-option ng-repeat="choice in vm.uiProp.choiceList" value="{{choice.value}}">{{choice.text}}</md-option>
+            <label>{{ labelText }}</label>
+            <md-select ng-disabled="uiProp.isReadOnly" placeholder="{{ uiProp.fullName }}" ng-model="uiProp.value">
+                <md-option ng-repeat="choice in uiProp.choiceList" value="{{choice.value}}">{{choice.text}}</md-option>
             </md-select>
         </md-input-container>
-        <md-button class="md-icon-button" ng-if="vm.uiProp.isModified"
-                   ng-click="vm.uiProp.reset()" title="Reset to default">
+        <md-button class="md-icon-button" ng-if="uiProp.customData && uiProp.customData.AllowReset === true && uiProp.isModified"
+                   ng-click="uiProp.reset()" title="Reset to default">
             <md-icon>replay</md-icon>
         </md-button>
     </div>
 
-    <div flex ng-if="vm.uiProp.isCheckbox">
-        <md-checkbox flex ng-model="vm.uiProp.value" aria-label="{{vm.uiProp.fullName}}"
-                        ng-disabled="vm.uiProp.isReadOnly"
-                        ng-class="{ 'c360-modified': vm.uiProp.isModified, 'c360-invalid': vm.uiProp.errorInfo}">
-            {{ vm.propLabel }}
+    <div flex ng-if="uiProp.isCheckbox">
+        <md-checkbox ng-model="uiProp.value" aria-label="{{uiProp.fullName}}"
+                        ng-disabled="uiProp.isReadOnly"
+                        ng-class="{ 'c360-modified': uiProp.isModified, 'c360-invalid': uiProp.errorInfo}">
+            {{ labelText }}
         </md-checkbox>
     </div>
 </div>

@@ -35,4 +35,6 @@
         // To use your own design, change the design key being passed below
         c360ContextProvider.setDesignKey('575458448649916390/2gn1dj1tslb4');
     }]);
+
+    app.constant('c360PropTemplateUrl', 'app/common/c360MdProp.html');
 })();

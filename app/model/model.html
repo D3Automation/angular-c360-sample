@@ -1,23 +1,24 @@
 <md-content id="model-view" flex layout="row" layout-fill>
     <md-content id="prop-list" flex="50" layout="column">
         <!-- Show a specific property (or properties) using the property name from C360 as the label-->
-        
-        <!--<div layout="row">
-            <c360-md-prop flex ui-prop="vm.rootPart.Usage"></c360-md-prop>
-            <c360-md-prop flex ui-prop="vm.rootPart.FrameColor"></c360-md-prop>
-        </div>-->
-        
+        <!--
+        <div layout="row">
+            <c360-prop flex ui-prop="vm.rootPart.Cost"></c360-prop>
+            <c360-prop flex ui-prop="vm.rootPart.Diameter"></c360-prop>
+        </div>
+        -->
         
         <!-- Show a specific property (or properties) and override the label -->
-        
-        <!--<div layout="row">
-            <c360-md-prop flex ui-prop="vm.rootPart.Usage" prop-label="Usage Type"></c360-md-prop>
-            <c360-md-prop flex ui-prop="vm.rootPart.FrameColor" prop-label="Color of Frame"></c360-md-prop>
-        </div>-->
-        
+        <!--
+        <div layout="row">
+            <c360-prop flex ui-prop="vm.rootPart.Cost" label-text="Total Cost"></c360-prop>
+            <c360-prop flex ui-prop="vm.rootPart.Diameter" label-text="Diameter (in)"></c360-prop>
+        </div>
+        -->
+
         <!-- Show all properties, stacked vertically -->
-        <div flex layout="column">
-            <c360-md-prop flex ng-repeat="prop in vm.rootPart.uiProperties" ui-prop="prop"></c360-md-prop>
+        <div layout="column">
+            <c360-prop flex ng-repeat="prop in vm.rootPart.uiProperties" ui-prop="prop"></c360-prop>
         </div>
     </md-content>
 

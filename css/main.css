@@ -38,14 +38,14 @@ md-radio-button {
 en-c360-viewer {
   margin-bottom: 25px; }
 
-c360-md-prop md-select, .c360-prop md-select {
+c360-prop md-select, .c360-prop md-select {
   margin-top: 0 !important;
   margin-bottom: 25px; }
 
-c360-md-prop, .c360-prop {
+c360-prop, .c360-prop {
   margin-right: 10px; }
 
-c360-md-prop .md-errors-spacer, .c360-prop .md-errors-spacer {
+c360-prop .md-errors-spacer, .c360-prop .md-errors-spacer {
   margin: 0; }
 
 .prop-row {
